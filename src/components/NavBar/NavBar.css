@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B1357A;
+    padding: 1rem;
+}
+
+.logo-container {
+    width: 100px;
+    display: flex;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.logo-container h1 {
+    margin-left: 1rem;
+}
+
+.menu-container {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu-item {
+    padding: 0 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color:#FFF591 ;
+}
