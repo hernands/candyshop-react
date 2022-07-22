@@ -6,35 +6,53 @@ header {
     padding: 1rem;
 }
 
-.logo-container {
-    width: 100px;
+.header-section {
+    width: 30%;
+}
+
+.logo-section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-section h1 {
+    font-size: 1.4rem;
+    line-height: 0.9;    
+    letter-spacing: 3px;
+}
+
+.logo-container {
+    width: 70px;
+    padding: 5px;
 }
 
 .logo-container img {
     width: 100%;
 }
 
-.logo-container h1 {
-    margin-left: 1rem;
-}
-
-.menu-container {
-    width: 100%;
-}
 
 .menu {
     display: flex;
-    justify-content: end;
     list-style: none;
-    font-weight: bold;
 }
 
 .menu-item {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
-.menu-link {
-    text-decoration: none;
+.menu-button {    
+    font-family: 'Cherry Swash', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: none;
     color:#FFF591 ;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.cart-container {
+    text-align: right;
 }
