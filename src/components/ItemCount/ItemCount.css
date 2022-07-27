@@ -5,9 +5,21 @@
     align-items: center;
     background-color: #B1357A;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .counter-container button {
     width: 35px;
+}
+
+.add-to-cart {
+    font-family: 'Cherry Swash', sans-serif;
+    background-color: #B1357A;
+    padding: 1rem;
+    border-radius: 10px;
+    border: #B1357A;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
 }
 
