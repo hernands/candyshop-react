@@ -1,12 +1,14 @@
 import './ItemListContainer.css'
+import ItemCount from '../ItemCount/ItemCount'
 
 
 const ItemListContainer = ({greeting}) => {
 
     return (
         //JSX
-        <div>
-            <p className='welcome-message'> {greeting} </p>
+        <div className='welcome-message'>
+            <p> {greeting} </p>
+            <ItemCount/>
         </div>
         
     )

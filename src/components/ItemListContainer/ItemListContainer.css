@@ -2,4 +2,8 @@
     padding: 5rem;
     text-align: center;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

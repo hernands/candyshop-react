@@ -1,0 +1,13 @@
+.counter-container {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B1357A;
+    border-radius: 10px;
+}
+
+.counter-container button {
+    width: 35px;
+}
+
