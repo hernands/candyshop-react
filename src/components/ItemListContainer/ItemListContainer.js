@@ -1,28 +1,33 @@
+import { useState, useEffect } from 'react'
 import './ItemListContainer.css'
-import ItemList from '../ItemList/ItemList'
 import products from '../../utils/products.mock'
-import { useState } from 'react'
+import ItemList from '../ItemList/ItemList'
 
+console.log(products)
 
 const ItemListContainer = ({greeting}) => {
 
     const [listItems, setListItems] = useState([])
 
-    const getItems = new Promise ( (resolve, reject) => {
+    const getItems = new Promise ( (resolve) => {
         setTimeout(()=>{resolve(products)},2000)}
     )
 
-    getItems
-    .then((res)=>{setListItems(res)})
-    .catch((error)=>{console.log("No pudieron obtenerse los items");})
+    useEffect( ()=>{
+        getItems.then((res)=>{setListItems(res)})
+    } ,[])
+
+    
 
     return (
         //JSX
+        <><h2> {greeting} </h2>
         <div className='item-list-container'>
-            <p> {greeting} </p>
+            
             <ItemList items={listItems} />
+            
         </div>
-        
+        </>
     )
 
 }
